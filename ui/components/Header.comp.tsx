@@ -27,9 +27,7 @@ const Header = () => {
           justify-content: center;
           align-items: center;
 
-          padding: 1.8rem 2rem;
-          border: 1px solid #f2f2f2;
-          border-radius: 5px;
+          margin-top: 2rem;
         }
 
         .image-container {
