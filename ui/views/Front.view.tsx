@@ -3,13 +3,13 @@ import Header from '@components/Header.comp'
 export const Front = () => {
   return (
     <>
-      <div className='home-container'>
+      <div className='front-container'>
         <Header />
       </div>
 
       {/* STYLES */}
       <style jsx>{`
-        .home-container {
+        .front-container {
           margin-bottom: 9vh;
         }
       `}</style>
