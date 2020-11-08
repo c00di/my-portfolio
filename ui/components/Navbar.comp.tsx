@@ -2,11 +2,17 @@ const Navbar = () => {
   return (
     <>
       <div className='container'>
-        {'{'}
-        <p className='nav-link'>Home</p>
-        <p className='nav-link'>Projects</p>
-        <p className='nav-link'>Contact</p>
-        {'}'}
+        <div className='link-container'>
+          <a className='link'>Home</a>
+        </div>
+        {'|'}
+        <div className='link-container'>
+          <a className='link'>Projects</a>
+        </div>
+        {'|'}
+        <div className='link-container'>
+          <a className='link'>Contact</a>
+        </div>
       </div>
 
       {/* STYLES */}
@@ -16,11 +22,22 @@ const Navbar = () => {
           flex-direction: row;
           align-items: center;
           justify-content: center;
+          padding: 0;
+          margin: 0 0 2rem;
         }
 
-        .nav-link {
-          padding: 1rem 2rem;
+        a.link {
+          font-weight: 300;
+          padding: 0.5rem 2rem;
+          margin: 0 1rem;
           text-transform: uppercase;
+          border-bottom: none;
+          transition-duration: 0.2s;
+        }
+
+        a.link:hover {
+          color: cadetblue;
+          transition-duration: 0.2s;
         }
       `}</style>
     </>

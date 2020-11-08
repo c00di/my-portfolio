@@ -26,15 +26,10 @@ const Header = () => {
           display: flex;
           justify-content: center;
           align-items: center;
-
-          margin-top: 2rem;
         }
 
         .image-container {
           padding-right: 2rem;
-        }
-
-        .info-container {
         }
 
         .info {
