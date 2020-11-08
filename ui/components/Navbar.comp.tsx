@@ -1,17 +1,25 @@
+import Link from 'next/link'
+
 const Navbar = () => {
   return (
     <>
       <div className='container'>
         <div className='link-container'>
-          <a className='link'>Home</a>
+          <Link href='/'>
+            <a className='link'>Home</a>
+          </Link>
         </div>
         {'|'}
         <div className='link-container'>
-          <a className='link'>Projects</a>
+          <Link href='#'>
+            <a className='link'>Projects</a>
+          </Link>
         </div>
         {'|'}
         <div className='link-container'>
-          <a className='link'>Contact</a>
+          <Link href='/contact'>
+            <a className='link'>Contact</a>
+          </Link>
         </div>
       </div>
 
@@ -27,6 +35,7 @@ const Navbar = () => {
         }
 
         a.link {
+          color: #f2f2f2;
           font-weight: 300;
           padding: 0.5rem 2rem;
           margin: 0 1rem;
@@ -36,8 +45,12 @@ const Navbar = () => {
         }
 
         a.link:hover {
-          color: cadetblue;
+          color: cadetblue !important;
           transition-duration: 0.2s;
+        }
+
+        a.link:visited {
+          color: #f2f2f2;
         }
       `}</style>
     </>
