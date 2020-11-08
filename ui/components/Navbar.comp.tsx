@@ -13,6 +13,7 @@ const Navbar = () => {
           display: flex;
           flex-direction: row;
           align-items: center;
+          justify-content: center;
         }
 
         .nav-link {
