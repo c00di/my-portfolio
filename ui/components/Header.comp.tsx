@@ -6,7 +6,7 @@ const Header = () => {
       <div className='container'>
         <div className='image-container'>
           <Image
-            src='/static/profile.jpg'
+            src='/static/profile.png'
             alt='my-picture'
             width={180}
             height={180}
@@ -26,6 +26,14 @@ const Header = () => {
           display: flex;
           justify-content: center;
           align-items: center;
+
+          padding: 1.8rem 2rem;
+          border: 1px solid #f2f2f2;
+          border-radius: 5px;
+        }
+
+        .image-container {
+          padding-right: 2rem;
         }
 
         .info-container {
