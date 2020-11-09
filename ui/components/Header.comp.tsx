@@ -8,7 +8,7 @@ const Header = () => {
         <div className='image-container'>
           <Image
             src='/static/profile.png'
-            alt='my-picture'
+            alt='picture-of-me'
             width={180}
             height={180}
           />
