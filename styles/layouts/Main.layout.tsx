@@ -5,8 +5,12 @@ const MainLayout = ({ children }) => {
   return (
     <div className='layout main-layout'>
       <Head>
-        <title>Joakim Liukkonen | My Portfolio</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta
+          name='Description'
+          content='Joakim Liukkonen developer portfolio.'
+        />
+        <title>Joakim Liukkonen | My Portfolio</title>
       </Head>
 
       <Navbar />
