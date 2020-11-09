@@ -31,7 +31,7 @@ const Navbar = () => {
           align-items: center;
           justify-content: center;
           padding: 0;
-          margin: 0 0 2rem;
+          margin: 0 0 2.3rem;
         }
 
         a.link {
