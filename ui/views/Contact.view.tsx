@@ -16,9 +16,10 @@ const Contact = () => {
             name='email'
             placeholder='Email'
           />
+
           <textarea
             className='text'
-            rows='4'
+            rows={4}
             name='text'
             placeholder='Message'
           ></textarea>
