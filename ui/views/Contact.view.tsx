@@ -4,7 +4,12 @@ const Contact = () => {
       <div className='contact-container'>
         <h1>Contact me</h1>
 
-        <form className='form'>
+        <form
+          className='form'
+          method='POST'
+          action='/success'
+          data-netlify='true'
+        >
           <input
             className='email'
             type='email'
