@@ -81,7 +81,7 @@ const Header = () => {
         }
 
         .info {
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           padding: 0;
           margin: 0;
         }
