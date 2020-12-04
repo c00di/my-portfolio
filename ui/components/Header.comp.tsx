@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 const Header = () => {
@@ -6,12 +5,6 @@ const Header = () => {
     <>
       <div className='container'>
         <div className='image-container'>
-          {/* <Image
-            src='/static/profile.png'
-            alt='picture-of-me'
-            width={180}
-            height={180}
-          /> */}
           <img className='profile-img' src='/static/profile.png' alt='profile-image' />
         </div>
 
