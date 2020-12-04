@@ -83,8 +83,8 @@ const Header = () => {
         }
 
         .profile-img {
-          height: 180px,
-          width: 180px,
+          height: 160px;
+          width: 160px;
         }
 
         .info {
@@ -118,6 +118,10 @@ const Header = () => {
 
         .icon {
           margin-right: 1rem;
+        }
+
+        .github {
+          margin-left: 0.1rem
         }
 
         .github svg:hover {
