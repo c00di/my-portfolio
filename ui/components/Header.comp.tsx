@@ -6,12 +6,13 @@ const Header = () => {
     <>
       <div className='container'>
         <div className='image-container'>
-          <Image
+          {/* <Image
             src='/static/profile.png'
             alt='picture-of-me'
             width={180}
             height={180}
-          />
+          /> */}
+          <img className='profile-img' src='/static/profile.png' alt='profile-image' />
         </div>
 
         <div className='info-container'>
@@ -79,6 +80,11 @@ const Header = () => {
 
         .image-container {
           padding-right: 2rem;
+        }
+
+        .profile-img {
+          height: 180px,
+          width: 180px,
         }
 
         .info {
