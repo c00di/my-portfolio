@@ -19,7 +19,7 @@ const Contact = () => {
 
           <textarea
             className='text'
-            rows={4}
+            rows={8}
             name='text'
             placeholder='Message'
           ></textarea>
@@ -43,7 +43,7 @@ const Contact = () => {
         .text {
           width: 100%;
           padding: 12px 20px;
-          margin: 1rem 0;
+          margin: 0 0 1rem;
           display: inline-block;
           border: 1px solid #ccc;
           border-radius: 4px;
