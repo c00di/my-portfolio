@@ -6,31 +6,38 @@ const Contact = () => {
 
         <form
           className='form'
+          name='contact'
           method='POST'
           action='/success'
           data-netlify='true'
         >
-          <input type="hidden" name="form-name" value="contact" />
+          {/* <input type="hidden" name="form-name" value="contact" /> */}
 
-          <label className='label' htmlFor='email'>Email</label>
-          <input
-            className='email'
-            type='email'
-            name='email'
-            id='email'
-            placeholder='Email'
-          />
+          <p>
+            <label className='label' htmlFor='email'>Email</label>
+            <input
+              className='email'
+              type='email'
+              name='email'
+              id='email'
+              placeholder='Email'
+            />
+          </p>
 
-          <label className='label' htmlFor='text'>Text</label>
-          <textarea
-            className='text'
-            rows={8}
-            name='text'
-            id='text'
-            placeholder='Message'
-          ></textarea>
+          <p>
+            <label className='label' htmlFor='text'>Text</label>
+            <textarea
+              className='text'
+              rows={8}
+              name='text'
+              id='text'
+              placeholder='Message'
+            ></textarea>
+          </p>
 
-          <button className='button' type='submit'>Submit</button>
+          <p>
+            <button className='button' type='submit'>Submit</button>
+          </p>
         </form>
       </div>
 
