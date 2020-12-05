@@ -1,4 +1,4 @@
-const success = () => {
+const Success = () => {
   return (
     <>
       <div className='success-container'>
@@ -38,4 +38,4 @@ const success = () => {
   )
 }
 
-export default success
+export default Success
