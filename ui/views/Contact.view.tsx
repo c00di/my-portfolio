@@ -30,10 +30,6 @@ const Contact = () => {
 
       {/* STYLES */}
       <style jsx>{`
-        h1 {
-          font-weight: 300;
-        }
-
         .form {
           display: flex;
           flex-direction: column;
