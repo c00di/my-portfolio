@@ -1,4 +1,20 @@
+import { TagCloud } from 'react-tagcloud'
+
 const Projects = () => {
+    const data = [
+        { value: 'HTML5', count: 33 },
+        { value: 'CSS3', count: 20 },
+        { value: 'JavaScript', count: 38 },
+        { value: 'TypeScript', count: 38 },
+        { value: 'React', count: 30 },
+        { value: 'React Native', count: 30 },
+        { value: 'NextJS', count: 30 },
+        { value: 'Nodejs', count: 28 },
+        { value: 'Express.js', count: 25 },
+        { value: 'MongoDB', count: 18 },
+        { value: 'PostgreSQL', count: 18 },
+    ]
+
     return (
         <>
             <div>
@@ -6,40 +22,21 @@ const Projects = () => {
 
                 <p>Coming soon(ish)...</p>
 
-                <div>
-                <ul className="cloud">
-                    <li>performance testing</li>
-                    <li>stress testing</li>
-                    <li>conformance testing</li>
-                    <li>acceptane testing</li>
-                    <li>smoke testing</li>
-                </ul>
+                <div className="tag-cloud">
+                    <TagCloud
+                        minSize={12}
+                        maxSize={35}
+                        tags={data}
+                        onClick={tag => console.log(`'${tag.value}' was selected!`)}
+                    />
                 </div>
             </div>
 
             {/* STYLES */}
             <style jsx>{`
-                .cloud {
-                    display: inline;
-                    list-style-type: none;
-                    width: 400px;
+                .tag-cloud {
+                    max-width: 700px
                 }
-
-                .cloud li {
-                    list-style: none;
-                    display: inline;
-                }
-
-                .cloud li:nth-of-type(3n + 1) {
-                    font-size: 1.25em;
-                }
-                .cloud li:nth-of-type(4n + 3) {
-                    font-size: 1.5em;
-                }
-                .cloud li:nth-of-type(5n - 3) {
-                    font-size: 1em;
-                }
-
             `}</style>
         </>
     )
