@@ -10,6 +10,7 @@ const Contact = () => {
           action='/success'
           data-netlify='true'
         >
+          <input type="hidden" name="form-name" value="contact" />
           <input
             className='email'
             type='email'
