@@ -11,6 +11,8 @@ const Contact = () => {
           data-netlify='true'
         >
           <input type="hidden" name="form-name" value="contact" />
+
+          <label className='label' htmlFor='email'>Email</label>
           <input
             className='email'
             type='email'
@@ -19,6 +21,7 @@ const Contact = () => {
             placeholder='Email'
           />
 
+          <label className='label' htmlFor='text'>Text</label>
           <textarea
             className='text'
             rows={8}
