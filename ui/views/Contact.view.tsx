@@ -11,7 +11,7 @@ const Contact = () => {
           action='/success'
           data-netlify='true'
         >
-          {/* <input type="hidden" name="form-name" value="contact" /> */}
+          <input type="hidden" name="form-name" value="contact" />
 
           <p>
             <label className='label' htmlFor='email'>Email</label>
