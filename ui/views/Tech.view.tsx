@@ -1,6 +1,6 @@
 import { TagCloud } from 'react-tagcloud'
 
-const Projects = () => {
+const Tech = () => {
     const data = [
         { value: 'HTML5', count: 33 },
         { value: 'CSS3', count: 20 },
@@ -18,9 +18,8 @@ const Projects = () => {
     return (
         <>
             <div>
-                <h1>My Projects</h1>
-
-                <p>Coming soon(ish)...</p>
+                <h1>Tech I Have Used</h1>
+                <p>These are the technologies I have used in my professional and hobby projects.</p>
 
                 <div className="tag-cloud">
                     <TagCloud
@@ -42,4 +41,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Tech
