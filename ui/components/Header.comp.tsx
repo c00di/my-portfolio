@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className='container'>
         <div className='image-container'>
-          <img className='profile-img' src='/static/profile.png' alt='profile-image' />
+          <img className='profile-img' src='/static/profile.png' alt='profile-image' width='160' height='160' />
         </div>
 
         <div className='info-container'>
@@ -16,7 +16,7 @@ const Header = () => {
           <div className='some-container'>
             <div className='icon github'>
               <Link href='https://github.com/c00di'>
-                <a>
+                <a title="Github">
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -41,7 +41,7 @@ const Header = () => {
 
             <div className='icon linkedin'>
               <Link href='https://www.linkedin.com/in/joakim-liukkonen/'>
-                <a>
+                <a title="LinkedIn">
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
