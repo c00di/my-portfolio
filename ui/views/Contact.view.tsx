@@ -52,11 +52,15 @@ const Contact = () => {
         .text {
           width: 100%;
           padding: 12px 20px;
-          margin: 0 0 1rem;
+          margin: 0;
           display: inline-block;
           border: 1px solid #ccc;
           border-radius: 4px;
           box-sizing: border-box;
+        }
+
+        .label {
+          display: none;
         }
 
          {
