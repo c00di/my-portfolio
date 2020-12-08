@@ -3,8 +3,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  max-width: 2160px;
 
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -38,4 +36,20 @@ input,
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.1rem;
+}
+
+.main-layout {
+  width: calc(100vw - 8rem);
+  height: calc(100vh - 8rem);
+  margin: 4rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(100vw - 8rem);
+  height: calc(100vh - 12rem);
 }
