@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className='navbar'>
 
         <div className="site-name">
-          <h1>Joakim Liukkonen</h1>
+          <Link href='/'><a><h1>Joakim Liukkonen</h1></a></Link>
         </div>
 
         <div className="nav-links">
@@ -47,7 +47,7 @@ const Navbar = () => {
           margin: 0.5rem 0 0 1rem;
         }
 
-        .site-name > h1 {
+        .site-name > a > h1 {
           font-size: 1.5rem;
           margin: 0;
           padding: 0.3rem 0.5rem;
