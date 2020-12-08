@@ -5,9 +5,9 @@ const Introduction = () => {
         <>
             <div className="container introduction-container">
                 <h2>
-                    I am a web developer with emphasis on various JavaScript <Link href='/tech'><a className='link'>technologies</a></Link>. 
+                    Hi! I'm a web developer with emphasis on various JavaScript <Link href='/tech'><a className='link'>technologies</a></Link>. 
 
-                    Please check my <Link href='/projects'><a className='link'>projects</a></Link> to see the cool stuff I have built. 
+                    Please check my <Link href='/projects'><a className='link'>projects</a></Link> to see the cool stuff I have published. 
 
                     {/* <br /><br />In 2020, after five years of living in Bangkok 🇹🇭, I moved to the capital city of my home country, Helsinki 🇫🇮. */}
 
