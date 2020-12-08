@@ -3,49 +3,69 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <>
-      <div className='container'>
-        <div className='link-container'>
-          <Link href='/'>
-            <a className='link'>Home</a>
-          </Link>
+      <div className='container navbar-container'>
+
+        <div className="site-name">
+          <h1>Joakim Liukkonen</h1>
         </div>
-        {'|'}
-        <div className='link-container'>
-          <Link href='/tech'>
-            <a className='link'>Tech</a>
-          </Link>
+
+        <div className="nav-links">
+          <div className='link-element'>
+            <Link href='/'>
+              <a className='link'>Home</a>
+            </Link>
+          </div>
+          {/* {'|'} */}
+          <div className='link-element'>
+            <Link href='/tech'>
+              <a className='link'>Tech</a>
+            </Link>
+          </div>
+          {/* {'|'} */}
+          <div className='link-element'>
+            <Link href='/projects'>
+              <a className='link'>Projects</a>
+            </Link>
+          </div>
+          {/* {'|'} */}
+          <div className='link-element'>
+            <Link href='/contact'>
+              <a className='link'>Contact</a>
+            </Link>
+          </div>
         </div>
-        {'|'}
-        <div className='link-container'>
-          <Link href='/projects'>
-            <a className='link'>Projects</a>
-          </Link>
-        </div>
-        {'|'}
-        <div className='link-container'>
-          <Link href='/contact'>
-            <a className='link'>Contact</a>
-          </Link>
-        </div>
+
       </div>
 
       {/* STYLES */}
       <style jsx>{`
-        .container {
+        .navbar-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0;
+          margin: 0.5rem 0 0 1rem;
+        }
+
+        .site-name > h1 {
+          font-size: 1.5rem;
+          margin: 0;
+          padding: 0
+        }
+
+        .nav-links {
           display: flex;
           flex-direction: row;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-end;
           padding: 0;
-          margin: 0 0 2.3rem;
         }
 
         a.link {
           color: #f2f2f2;
           font-weight: 300;
-          padding: 0.5rem 2rem;
+          padding: 0.5rem;
           margin: 0 1rem;
-          text-transform: uppercase;
           border-bottom: none;
           transition-duration: 0.2s;
         }
