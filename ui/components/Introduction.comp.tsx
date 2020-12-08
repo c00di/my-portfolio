@@ -20,10 +20,9 @@ const Introduction = () => {
             <style jsx>{`
                 .introduction-container {
                     display: flex;
-                    flex-direction: center;
                     justify-content: center;
-
                     text-align: center;
+                    
                     padding: 0;
                     margin: 8rem;
                 }

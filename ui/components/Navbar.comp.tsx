@@ -50,7 +50,8 @@ const Navbar = () => {
         .site-name > h1 {
           font-size: 1.5rem;
           margin: 0;
-          padding: 0
+          padding: 0.3rem 0.5rem;
+          border: 0.5px solid #f2f2f2
         }
 
         .nav-links {

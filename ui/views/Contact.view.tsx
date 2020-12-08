@@ -1,62 +1,70 @@
 const Contact = () => {
   return (
     <>
-      <div className='contact-container'>
-        <h1>Contact me</h1>
+      <div className='container contact-container'>
+        <div className="form">
+          <h1 className='title'>Contact me</h1>
 
-        <form
-          className='form'
-          name='contact'
-          method='POST'
-          action='/success'
-          data-netlify='true'
-        >
-          <input type="hidden" name="form-name" value="contact" />
+          <form
+            name='contact'
+            method='POST'
+            action='/success'
+            data-netlify='true'
+          >
+            <input type="hidden" name="form-name" value="contact" />
 
-          <p>
-            <label className='label' htmlFor='email'>Email</label>
-            <input
-              className='email'
-              type='email'
-              name='email'
-              id='email'
-              placeholder='Email'
-            />
-          </p>
+            <p>
+              <label className='label' htmlFor='email'>Email</label>
+              <input
+                className='email'
+                type='email'
+                name='email'
+                id='email'
+                placeholder='Email'
+              />
+            </p>
 
-          <p>
-            <label className='label' htmlFor='text'>Text</label>
-            <textarea
-              className='text'
-              rows={8}
-              name='text'
-              id='text'
-              placeholder='Message'
-            ></textarea>
-          </p>
+            <p>
+              <label className='label' htmlFor='text'>Text</label>
+              <textarea
+                className='text'
+                rows={8}
+                name='text'
+                id='text'
+                placeholder='Message'
+              ></textarea>
+            </p>
 
-          <p>
-            <button className='button' type='submit'>Submit</button>
-          </p>
-        </form>
+            <p>
+              <button className='button' type='submit'>Submit</button>
+            </p>
+          </form>
+        </div>
       </div>
 
       {/* STYLES */}
       <style jsx>{`
         .form {
-          display: flex;
-          flex-direction: column;
+          width: 100%;
+          padding: 1rem 10rem;
+          max-width: 1200px
+        }
+
+        form {
+          width: 100%;
+        }
+
+        .title {
+          text-align: left
         }
 
         .email,
         .text {
           width: 100%;
-          padding: 12px 20px;
+          padding: 1rem 1.25rem;
           margin: 0;
-          display: inline-block;
           border: 1px solid #ccc;
           border-radius: 4px;
-          box-sizing: border-box;
         }
 
         .label {
@@ -69,9 +77,9 @@ const Contact = () => {
         .button {
           width: 100%;
           background-color: cadetblue;
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
+          color: #f2f2f2;
+          padding: 1rem 1.25rem;
+          margin: 0.5rem 0;
           border: none;
           border-radius: 4px;
           cursor: pointer;
