@@ -24,7 +24,6 @@ const Introduction = () => {
                     justify-content: center;
 
                     text-align: center;
-                    min-height: 60vh;
                     padding: 0;
                     margin: 8rem;
                 }
