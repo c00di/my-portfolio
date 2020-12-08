@@ -31,7 +31,7 @@ const Tech = () => {
 
     return (
         <>
-            <div className='tech-container'>
+            <div className='container tech-container'>
                 <h1>Tech I Have Used</h1>
                 <p>These are the (main) technologies I have used in my professional and hobby projects.</p>
 

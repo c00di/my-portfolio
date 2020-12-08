@@ -3,7 +3,7 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <>
-      <div className='container navbar-container'>
+      <div className='navbar'>
 
         <div className="site-name">
           <h1>Joakim Liukkonen</h1>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
       {/* STYLES */}
       <style jsx>{`
-        .navbar-container {
+        .navbar {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
