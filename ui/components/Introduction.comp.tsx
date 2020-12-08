@@ -19,12 +19,8 @@ const Introduction = () => {
             {/* STYLES */}
             <style jsx>{`
                 .introduction-container {
-                    display: flex;
-                    justify-content: center;
                     text-align: center;
-                    
-                    padding: 0;
-                    margin: 8rem;
+                    max-width: 1000px
                 }
 
                 h2 {

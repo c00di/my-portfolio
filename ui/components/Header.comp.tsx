@@ -65,12 +65,6 @@ const Header = () => {
 
       {/* STYLES */}
       <style jsx>{`
-        .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         .image-container {
           padding-right: 2rem;
         }

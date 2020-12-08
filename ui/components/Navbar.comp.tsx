@@ -64,9 +64,10 @@ const Navbar = () => {
 
         a.link {
           color: #f2f2f2;
+          font-size: 1.2rem;
           font-weight: 300;
-          padding: 0.5rem;
-          margin: 0 1rem;
+          padding-bottom: 0.2rem;
+          margin: 0 1.2rem;
           border-bottom: none;
           transition-duration: 0.2s;
         }
@@ -74,6 +75,7 @@ const Navbar = () => {
         a.link:hover {
           color: cadetblue !important;
           transition-duration: 0.2s;
+          border-bottom: 1px solid cadetblue;
         }
 
         a.link:visited {

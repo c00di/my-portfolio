@@ -9,7 +9,7 @@ export const Front = () => {
 
       {/* STYLES */}
       <style jsx>{`
-      
+        
       `}</style>
     </>
   )
