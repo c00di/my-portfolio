@@ -15,19 +15,19 @@ const Navbar = () => {
               <a className='link'>Home</a>
             </Link>
           </div>
-          {/* {'|'} */}
+
           <div className='link-element'>
             <Link href='/tech'>
               <a className='link'>Tech</a>
             </Link>
           </div>
-          {/* {'|'} */}
+
           <div className='link-element'>
             <Link href='/projects'>
               <a className='link'>Projects</a>
             </Link>
           </div>
-          {/* {'|'} */}
+
           <div className='link-element'>
             <Link href='/contact'>
               <a className='link'>Contact</a>
@@ -48,7 +48,7 @@ const Navbar = () => {
         }
 
         .site-name > a > h1 {
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           margin: 0;
           padding: 0.3rem 0.5rem;
           border: 0.5px solid #f2f2f2
@@ -64,7 +64,7 @@ const Navbar = () => {
 
         a.link {
           color: #f2f2f2;
-          font-size: 1.2rem;
+          font-size: 1.3rem;
           font-weight: 300;
           padding-bottom: 0.2rem;
           margin: 0 1.2rem;

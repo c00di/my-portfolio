@@ -27,7 +27,7 @@ const Introduction = () => {
                     letter-spacing: 8px;
                     line-height: 4vw;
                     font-weight: 300;
-                    font-size: 2.5vw;
+                    font-size: 2.4vw;
                 }
 
                 a.link {
