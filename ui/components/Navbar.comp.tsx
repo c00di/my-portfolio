@@ -1,34 +1,37 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
+  const router = useRouter()
+
   return (
     <>
       <div className='navbar'>
 
-        <div className="site-name">
+        <div className='site-name'>
           <Link href='/'><a><h1>Joakim Liukkonen</h1></a></Link>
         </div>
 
-        <div className="nav-links">
-          <div className='link-element'>
+        <div className='nav-links'>
+          <div className={router.route === '/' && 'current'}>
             <Link href='/'>
               <a className='link'>Home</a>
             </Link>
           </div>
 
-          <div className='link-element'>
+          <div className={router.route === '/tech' && 'current'}>
             <Link href='/tech'>
               <a className='link'>Tech</a>
             </Link>
           </div>
 
-          <div className='link-element'>
+          <div className={router.route === '/projects' && 'current'}>
             <Link href='/projects'>
               <a className='link'>Projects</a>
             </Link>
           </div>
 
-          <div className='link-element'>
+          <div className={router.route === '/contact' && 'current'}>
             <Link href='/contact'>
               <a className='link'>Contact</a>
             </Link>
@@ -62,6 +65,10 @@ const Navbar = () => {
           justify-content: flex-end;
 
           padding: 0;
+        }
+
+        .current > a {
+          color: cadetblue !important;
         }
 
         a.link {
