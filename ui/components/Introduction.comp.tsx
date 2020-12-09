@@ -19,15 +19,15 @@ const Introduction = () => {
             {/* STYLES */}
             <style jsx>{`
                 .introduction-container {
-                    text-align: center;
+                    text-align: left;
                     max-width: 1000px
                 }
 
                 h2 {
-                    letter-spacing: 8px;
+                    letter-spacing: 6px;
                     line-height: 4vw;
-                    font-weight: 300;
-                    font-size: 2.4vw;
+                    font-weight: 400;
+                    font-size: 2.3vw;
                 }
 
                 a.link {

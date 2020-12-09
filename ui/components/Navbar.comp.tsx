@@ -48,7 +48,8 @@ const Navbar = () => {
         }
 
         .site-name > a > h1 {
-          font-size: 1.6rem;
+          font-size: 1.4rem;
+          font-weight: 400;
           margin: 0;
           padding: 0.3rem 0.5rem;
           border: 0.5px solid #f2f2f2
@@ -59,13 +60,14 @@ const Navbar = () => {
           flex-direction: row;
           align-items: center;
           justify-content: flex-end;
+
           padding: 0;
         }
 
         a.link {
           color: #f2f2f2;
-          font-size: 1.3rem;
-          font-weight: 300;
+          font-size: 1rem;
+          font-weight: 400;
           padding-bottom: 0.2rem;
           margin: 0 1.2rem;
           border-bottom: none;
