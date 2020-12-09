@@ -5,7 +5,7 @@ const Introduction = () => {
         <>
             <div className="container introduction-container">
                 <h2>
-                    Hi! I'm a web developer with emphasis on various JavaScript <Link href='/tech'><a className='link'>technologies</a></Link>. 
+                    I am a web developer with emphasis on various JavaScript <Link href='/tech'><a className='link'>technologies</a></Link>. 
 
                     Please check my <Link href='/projects'><a className='link'>projects</a></Link> to see the cool stuff I have published. 
 
