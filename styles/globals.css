@@ -77,3 +77,20 @@ input,
   width: calc(100vw - 8rem);
   height: calc(100vh - 12rem);
 }
+
+/* MOBILE */
+@media only screen and (max-width: 1015px) {
+  /* NAVBAR */
+  .navbar {
+    margin: 0 !important;
+    justify-content: center !important;
+  }
+
+  .site-name {
+    display: none;
+  }
+
+  a.link {
+    margin: 0 0.4rem !important;
+  }
+}
