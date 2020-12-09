@@ -73,9 +73,9 @@ const Navbar = () => {
         }
 
         a.link:hover {
-          color: red !important;
+          color: cadetblue !important;
           transition-duration: 0.2s;
-          border-bottom: 1px solid red;
+          border-bottom: 1px solid cadetblue;
         }
 
         a.link:visited {

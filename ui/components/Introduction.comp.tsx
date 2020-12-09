@@ -31,7 +31,7 @@ const Introduction = () => {
                 }
 
                 a.link {
-                    color: red;
+                    color: cadetblue;
                     text-decoration: underline;
                     font-weight: 400;
                 }
