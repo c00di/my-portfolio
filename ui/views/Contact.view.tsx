@@ -2,7 +2,6 @@ const Contact = () => {
   return (
     <>
       <div className='container contact-container'>
-        <div className="form">
           <h1 className='title'>Contact me</h1>
 
           <form
@@ -39,19 +38,13 @@ const Contact = () => {
               <button className='button' type='submit'>Submit</button>
             </p>
           </form>
-        </div>
       </div>
 
       {/* STYLES */}
       <style jsx>{`
-        .form {
-          width: 100%;
-          padding: 1rem 10rem;
-          max-width: 1200px
-        }
-
         form {
           width: 100%;
+          max-width: 1200px
         }
 
         .title {
