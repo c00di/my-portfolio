@@ -6,11 +6,6 @@ export const Front = () => {
       <div className='container front-container'>
         <Introduction />
       </div>
-
-      {/* STYLES */}
-      <style jsx>{`
-        
-      `}</style>
     </>
   )
 }

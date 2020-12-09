@@ -5,11 +5,6 @@ const Projects = () => {
                 <h1>My Projects</h1>
                 <p>Coming soon(ish)...</p>
             </div>
-
-            {/* STYLES */}
-            <style jsx>{`
-
-            `}</style>
         </>
     )
 }
