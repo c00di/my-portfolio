@@ -62,7 +62,7 @@ const Navbar = () => {
               <img
                 className='toggle-icon'
                 onClick={handleColorModeToggle}
-                src='/static/moon-icon.png'
+                src='/static/moon-icon-min.png'
                 alt='night-mode'
                 height='25px'
                 width='25px'
@@ -71,7 +71,7 @@ const Navbar = () => {
               <img
                 className='toggle-icon'
                 onClick={handleColorModeToggle}
-                src='/static/sun-icon.png'
+                src='/static/sun-icon-min.png'
                 alt='day-mode'
                 height='25px'
                 width='25px'
