@@ -27,7 +27,7 @@ const Navbar = () => {
         <div className='site-name'>
           <Link href='/'>
             <a>
-              <h1>Joakim Liukkonen</h1>
+              <h1>LIUKKONEN.dev</h1>
             </a>
           </Link>
         </div>
@@ -94,6 +94,7 @@ const Navbar = () => {
         .site-name > a > h1 {
           font-size: 1.2rem;
           font-weight: 400;
+          letter-spacing: 1px;
           margin: 0;
           padding: 0.3rem 0.5rem;
           border: 0.5px solid #f2f2f2;
