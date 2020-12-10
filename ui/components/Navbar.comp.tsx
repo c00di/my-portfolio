@@ -56,9 +56,9 @@ const Navbar = () => {
 
           <div className='color-mode-toggle'>
             {bgDark ? (
-              <BsToggleOn onClick={handleColorModeToggle} size='1.5rem' />
+              <BsToggleOn onClick={handleColorModeToggle} size='1.3rem' />
             ) : (
-              <BsToggleOff onClick={handleColorModeToggle} size='1.5rem' />
+              <BsToggleOff onClick={handleColorModeToggle} size='1.3rem' />
             )}
           </div>
         </div>
@@ -75,18 +75,22 @@ const Navbar = () => {
         }
 
         .site-name > a > h1 {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 400;
           margin: 0;
           padding: 0.3rem 0.5rem;
           border: 0.5px solid #f2f2f2;
         }
 
+         {
+          /* LINKS */
+        }
         .nav-links {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: flex-end;
+          margin-bottom: 0.15rem;
 
           padding: 0;
         }
@@ -95,12 +99,16 @@ const Navbar = () => {
           color: cadetblue !important;
         }
 
+        .current > a:hover {
+          color: cadetblue !important;
+          border-bottom: none;
+        }
+
         a.link {
           color: #f2f2f2;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 400;
-          padding-bottom: 0.2rem;
-          margin: 0 1.2rem;
+          margin: 0 1.1rem;
           border-bottom: none;
           transition-duration: 0.2s;
         }
@@ -113,6 +121,19 @@ const Navbar = () => {
 
         a.link:visited {
           color: #f2f2f2;
+        }
+
+         {
+          /* TOGGLE */
+        }
+        .color-mode-toggle {
+          padding-top: 0.35rem;
+          margin: 0 0 0 1.1rem;
+          transition-duration: 0.2s;
+        }
+        .color-mode-toggle:hover {
+          color: cadetblue !important;
+          transition-duration: 0.2s;
         }
       `}</style>
     </>
