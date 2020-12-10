@@ -35,7 +35,7 @@ const Navbar = () => {
         <div className='nav-links'>
           <div className={router.route === '/' && 'current'}>
             <Link href='/'>
-              <a className='link'>Home</a>
+              <a className='link first-link'>Home</a>
             </Link>
           </div>
 
@@ -88,7 +88,7 @@ const Navbar = () => {
           flex-direction: row;
           justify-content: space-between;
           padding: 0;
-          margin: 0.5rem 0 0 1rem;
+          margin: 0.5rem 0 0;
         }
 
         .site-name > a > h1 {
