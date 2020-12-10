@@ -8,9 +8,9 @@ const MainLayout = ({ children }) => {
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='Description'
-          content='Joakim Liukkonen developer portfolio.'
+          content="Hi! I'm a Finnish full-stack web developer. This is my portfolio."
         />
-        <title>Joakim Liukkonen | My Portfolio</title>
+        <title>Liukkonen.dev | My Portfolio</title>
       </Head>
 
       <Navbar />
