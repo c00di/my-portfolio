@@ -95,7 +95,7 @@ input,
   }
 
   /* NAVBAR */
-  .navbar {
+  #navbar {
     justify-content: center !important;
     padding-top: 0.6rem !important;
   }
