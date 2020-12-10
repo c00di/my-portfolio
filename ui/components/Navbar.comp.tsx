@@ -88,7 +88,7 @@ const Navbar = () => {
           flex-direction: row;
           justify-content: space-between;
           padding: 0;
-          margin: 0.5rem 0 0;
+          margin: 0;
         }
 
         .site-name > a > h1 {
