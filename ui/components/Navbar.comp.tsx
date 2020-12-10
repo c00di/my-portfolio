@@ -9,18 +9,22 @@ const Navbar = () => {
   // COLOR MODE TOGGLE
   const [bgDark, setBgDark] = useState(true)
   const handleColorModeToggle = () => {
-    if (document.body.className.includes('colorful-bg')) {
-      document.body.classList.remove('colorful-bg')
+    if (document.body.className.includes('alt-color-mode')) {
+      document.body.classList.remove('alt-color-mode')
+      document
+        .querySelector('#navbar')
+        .classList.remove('alt-color-mode-navbar')
       setBgDark(true)
     } else {
-      document.body.className = 'colorful-bg'
+      document.body.className = 'alt-color-mode'
+      document.querySelector('#navbar').classList.add('alt-color-mode-navbar')
       setBgDark(false)
     }
   }
 
   return (
     <>
-      <div className='navbar'>
+      <div id='navbar'>
         <div className='site-name'>
           <Link href='/'>
             <a>
@@ -66,7 +70,7 @@ const Navbar = () => {
 
       {/* STYLES */}
       <style jsx>{`
-        .navbar {
+        #navbar {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
