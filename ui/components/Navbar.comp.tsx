@@ -4,15 +4,29 @@ import { useRouter } from 'next/router'
 const Navbar = () => {
   const router = useRouter()
 
+  const handleColorModeToggle = () => {
+    if (document.body.className.includes('colorful-bg')) {
+      document.body.classList.remove('colorful-bg')
+    } else {
+      document.body.className = 'colorful-bg'
+    }
+  }
+
   return (
     <>
       <div className='navbar'>
-
         <div className='site-name'>
-          <Link href='/'><a><h1>Joakim Liukkonen</h1></a></Link>
+          <Link href='/'>
+            <a>
+              <h1>Joakim Liukkonen</h1>
+            </a>
+          </Link>
         </div>
 
         <div className='nav-links'>
+          <a onClick={handleColorModeToggle} href='#'>
+            test
+          </a>
           <div className={router.route === '/' && 'current'}>
             <Link href='/'>
               <a className='link'>Home</a>
@@ -37,7 +51,6 @@ const Navbar = () => {
             </Link>
           </div>
         </div>
-
       </div>
 
       {/* STYLES */}
@@ -55,7 +68,7 @@ const Navbar = () => {
           font-weight: 400;
           margin: 0;
           padding: 0.3rem 0.5rem;
-          border: 0.5px solid #f2f2f2
+          border: 0.5px solid #f2f2f2;
         }
 
         .nav-links {
