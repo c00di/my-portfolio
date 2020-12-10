@@ -5,6 +5,7 @@ const Contact = () => {
           <h1 className='title'>Contact me</h1>
 
           <form
+            className='form'
             name='contact'
             method='POST'
             action='/success'
@@ -42,19 +43,19 @@ const Contact = () => {
 
       {/* STYLES */}
       <style jsx>{`
-        form {
+        .form {
           width: 100%;
-          max-width: 1200px
+          max-width: 800px
         }
 
         .title {
-          text-align: left
+          text-align: left !important
         }
 
         .email,
         .text {
           width: 100%;
-          padding: 1rem 1.25rem;
+          padding: 0.3rem 0.5rem;
           margin: 0;
           border: 1px solid #ccc;
           border-radius: 4px;
@@ -71,8 +72,8 @@ const Contact = () => {
           width: 100%;
           background-color: cadetblue;
           color: #f2f2f2;
-          padding: 1rem 1.25rem;
-          margin: 0.5rem 0;
+          padding: 0.7rem;
+          margin: 0.3rem 0;
           border: none;
           border-radius: 4px;
           cursor: pointer;

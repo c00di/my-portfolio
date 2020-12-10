@@ -1,15 +1,35 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
 const Navbar = () => {
   const router = useRouter()
 
+  // COLOR MODE TOGGLE
+  const [darkMode, setDarkMode] = useState(true)
+  const handleColorModeToggle = () => {
+    if (document.body.className.includes('alt-color-mode')) {
+      document.body.classList.remove('alt-color-mode')
+      document
+        .querySelector('#navbar')
+        .classList.remove('alt-color-mode-navbar')
+      setDarkMode(true)
+    } else {
+      document.body.className = 'alt-color-mode'
+      document.querySelector('#navbar').classList.add('alt-color-mode-navbar')
+      setDarkMode(false)
+    }
+  }
+
   return (
     <>
-      <div className='navbar'>
-
+      <div id='navbar'>
         <div className='site-name'>
-          <Link href='/'><a><h1>Joakim Liukkonen</h1></a></Link>
+          <Link href='/'>
+            <a>
+              <h1>Joakim Liukkonen</h1>
+            </a>
+          </Link>
         </div>
 
         <div className='nav-links'>
@@ -36,13 +56,34 @@ const Navbar = () => {
               <a className='link'>Contact</a>
             </Link>
           </div>
-        </div>
 
+          <div className='color-mode-toggle'>
+            {darkMode ? (
+              <img
+                className='toggle-icon'
+                onClick={handleColorModeToggle}
+                src='/static/moon-icon.png'
+                alt='night-mode'
+                height='25px'
+                width='25px'
+              />
+            ) : (
+              <img
+                className='toggle-icon'
+                onClick={handleColorModeToggle}
+                src='/static/sun-icon.png'
+                alt='day-mode'
+                height='25px'
+                width='25px'
+              />
+            )}
+          </div>
+        </div>
       </div>
 
       {/* STYLES */}
       <style jsx>{`
-        .navbar {
+        #navbar {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
@@ -51,18 +92,22 @@ const Navbar = () => {
         }
 
         .site-name > a > h1 {
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 400;
           margin: 0;
           padding: 0.3rem 0.5rem;
-          border: 0.5px solid #f2f2f2
+          border: 0.5px solid #f2f2f2;
         }
 
+         {
+          /* LINKS */
+        }
         .nav-links {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: flex-end;
+          margin-bottom: 0.15rem;
 
           padding: 0;
         }
@@ -71,12 +116,16 @@ const Navbar = () => {
           color: cadetblue !important;
         }
 
+        .current > a:hover {
+          color: cadetblue !important;
+          border-bottom: none;
+        }
+
         a.link {
           color: #f2f2f2;
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 400;
-          padding-bottom: 0.2rem;
-          margin: 0 1.2rem;
+          margin: 0 1.1rem;
           border-bottom: none;
           transition-duration: 0.2s;
         }
@@ -89,6 +138,18 @@ const Navbar = () => {
 
         a.link:visited {
           color: #f2f2f2;
+        }
+
+         {
+          /* TOGGLE */
+        }
+        .toggle-icon {
+          margin: 0.3rem 0 0 1rem;
+          transition-duration: 0.2s;
+        }
+        .toggle-icon:hover {
+          color: cadetblue !important;
+          transition-duration: 0.2s;
         }
       `}</style>
     </>
