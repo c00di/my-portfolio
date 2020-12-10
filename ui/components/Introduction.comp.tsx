@@ -15,7 +15,6 @@ const Introduction = () => {
           </Link>
           {', '}
           to see the cool stuff I have published.
-          {/* <br /><br />In 2020, after five years of living in Bangkok 🇹🇭, I moved to the capital city of my home country, Helsinki 🇫🇮. */}
           <br />
           <br />
           Feel free to{' '}
