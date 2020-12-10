@@ -1,24 +1,23 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import { BsToggleOn, BsToggleOff } from 'react-icons/bs'
 
 const Navbar = () => {
   const router = useRouter()
 
   // COLOR MODE TOGGLE
-  const [bgDark, setBgDark] = useState(true)
+  const [darkMode, setDarkMode] = useState(true)
   const handleColorModeToggle = () => {
     if (document.body.className.includes('alt-color-mode')) {
       document.body.classList.remove('alt-color-mode')
       document
         .querySelector('#navbar')
         .classList.remove('alt-color-mode-navbar')
-      setBgDark(true)
+      setDarkMode(true)
     } else {
       document.body.className = 'alt-color-mode'
       document.querySelector('#navbar').classList.add('alt-color-mode-navbar')
-      setBgDark(false)
+      setDarkMode(false)
     }
   }
 
@@ -59,10 +58,24 @@ const Navbar = () => {
           </div>
 
           <div className='color-mode-toggle'>
-            {bgDark ? (
-              <BsToggleOn onClick={handleColorModeToggle} size='1.3rem' />
+            {darkMode ? (
+              <img
+                className='toggle-icon'
+                onClick={handleColorModeToggle}
+                src='/static/moon-icon.png'
+                alt='night-mode'
+                height='25px'
+                width='25px'
+              />
             ) : (
-              <BsToggleOff onClick={handleColorModeToggle} size='1.3rem' />
+              <img
+                className='toggle-icon'
+                onClick={handleColorModeToggle}
+                src='/static/sun-icon.png'
+                alt='day-mode'
+                height='25px'
+                width='25px'
+              />
             )}
           </div>
         </div>
@@ -130,12 +143,11 @@ const Navbar = () => {
          {
           /* TOGGLE */
         }
-        .color-mode-toggle {
-          padding-top: 0.35rem;
-          margin: 0 0 0 1.1rem;
+        .toggle-icon {
+          margin: 0.3rem 0 0 1rem;
           transition-duration: 0.2s;
         }
-        .color-mode-toggle:hover {
+        .toggle-icon:hover {
           color: cadetblue !important;
           transition-duration: 0.2s;
         }
