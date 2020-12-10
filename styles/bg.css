@@ -6,6 +6,7 @@ body {
 
 .colorful-bg {
   background: linear-gradient(-45deg, #000000, #111817, #50e0cd, #68bad3);
+  /* color: #333; */
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }

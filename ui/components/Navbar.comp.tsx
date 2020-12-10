@@ -1,14 +1,20 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
+import { BsToggleOn, BsToggleOff } from 'react-icons/bs'
 
 const Navbar = () => {
   const router = useRouter()
 
+  // COLOR MODE TOGGLE
+  const [bgDark, setBgDark] = useState(true)
   const handleColorModeToggle = () => {
     if (document.body.className.includes('colorful-bg')) {
       document.body.classList.remove('colorful-bg')
+      setBgDark(true)
     } else {
       document.body.className = 'colorful-bg'
+      setBgDark(false)
     }
   }
 
@@ -24,9 +30,6 @@ const Navbar = () => {
         </div>
 
         <div className='nav-links'>
-          <a onClick={handleColorModeToggle} href='#'>
-            test
-          </a>
           <div className={router.route === '/' && 'current'}>
             <Link href='/'>
               <a className='link'>Home</a>
@@ -49,6 +52,14 @@ const Navbar = () => {
             <Link href='/contact'>
               <a className='link'>Contact</a>
             </Link>
+          </div>
+
+          <div className='color-mode-toggle'>
+            {bgDark ? (
+              <BsToggleOn onClick={handleColorModeToggle} size='1.5rem' />
+            ) : (
+              <BsToggleOff onClick={handleColorModeToggle} size='1.5rem' />
+            )}
           </div>
         </div>
       </div>
