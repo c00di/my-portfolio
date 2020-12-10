@@ -146,6 +146,7 @@ const Navbar = () => {
         .toggle-icon {
           margin: 0.3rem 0 0 1rem;
           transition-duration: 0.2s;
+          cursor: pointer;
         }
         .toggle-icon:hover {
           color: cadetblue !important;
